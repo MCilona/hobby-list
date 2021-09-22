@@ -1,15 +1,17 @@
 <template>
   <div id="app">
-    <div class="top">
-      <div class="profile-image">
-        <img src="" alt="">
+    <div class="content">
+      <div class="top">
+        <div class="profile-image">
+          <img src= "./assets/avataaars.png"  class="avatar" alt="avatars">
+        </div>
+        <div class="top-credentials">
+          <p>name</p>
+          <p>email</p>
+        </div>
       </div>
-      <div class="top-credentials">
-        <p>name</p>
-        <p>email</p>
-      </div>
+      <Main />
     </div>
-    <Main />
   </div>
 </template>
 <script>
@@ -25,25 +27,25 @@ export default{
 </script>
 
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style lang="sass" scoped>
+.content
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+.top
+  display: flex
+  align-content: center
+  justify-content: center
+  align-items: center
+  margin: 20px 0
 
-#nav {
-  padding: 30px;
-}
+.avatar    
+  width: 80px
+  height: 80px
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+.top-credentials
+  p
+    margin: 0
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

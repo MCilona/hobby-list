@@ -39,14 +39,14 @@ export default {
     } 
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
+
 .input-hobby{
     display: block;
-    width: 30%;
     margin:20px auto;
 }
 .main-sport{
-    width: 40%;
+
     margin: auto;
     border: 2px solid grey;
     text-align: left;
@@ -54,6 +54,12 @@ export default {
     margin-top: 20px;
 
 }
+button {
+    display: block;
+    margin: auto;
+}
 
 
 </style>
+
+
