@@ -1,12 +1,29 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="top">
+      <div class="profile-image">
+        <img src="" alt="">
+      </div>
+      <div class="top-credentials">
+        <p>name</p>
+        <p>email</p>
+      </div>
     </div>
-    <router-view />
+    <Main />
   </div>
 </template>
+<script>
+import Main from './components/Main.vue'
+
+export default{
+  name: 'App',
+  components: {
+    Main,
+  }
+  
+}
+</script>
+
 
 <style>
 #app {
